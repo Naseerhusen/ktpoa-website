@@ -45,6 +45,7 @@ export function Navbar({
     { id: "events", label: "Events" },
     { id: "benefits", label: "Benefits" },
     { id: "faq", label: "FAQ" },
+    { id: "gallery", label: "Gallery" },
   ];
 
   const handleNavClick = (pageId: string) => {

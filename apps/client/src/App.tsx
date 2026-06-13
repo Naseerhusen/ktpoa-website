@@ -12,6 +12,7 @@ import { StudentRegistrationPage } from "./components/StudentRegistrationPage";
 import { ExecutiveMembersPage } from "./components/ExecutiveMembersPage";
 import { Toaster } from "./components/ui/sonner";
 import { motion, AnimatePresence } from "motion/react";
+import {GalleryPage} from "./components/GalleryPage";
 
 export default function App() {
   const [currentPage, setCurrentPage] = useState("home");
@@ -101,6 +102,7 @@ export default function App() {
       "industry-registration": IndustryRegistrationPage,
       "student-registration": StudentRegistrationPage,
       "executive-members": ExecutiveMembersPage,
+      "gallery": GalleryPage,
     };
 
     const PageComponent = pages[currentPage] || HomePage;
