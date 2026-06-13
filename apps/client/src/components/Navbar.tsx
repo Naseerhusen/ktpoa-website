@@ -69,7 +69,7 @@ export function Navbar({
 
   return (
     <nav
-      className={`${isVisible ? "translate-y-0" : "-translate-y-full"} fixed w-full top-0 z-50 transition-transform duration-500 bg-[#0F172A] font-sans`}
+      className={`${isVisible ? "translate-y-0" : "-translate-y-full"} fixed w-full top-0 z-[9999] transition-transform duration-500 bg-[#0F172A] font-sans`}
     >
       <div className="max-w-7xl mx-auto px-6 lg:px-8 h-[72px] flex items-center justify-between">
         {/* Logo */}
@@ -122,7 +122,7 @@ export function Navbar({
         </div>
 
         {/* Mobile Hamburger */}
-        <div className="md:hidden">
+        <div className="lg:hidden">
           <button
             onClick={() => setIsMenuOpen(!isMenuOpen)}
             className="text-white p-2"
@@ -134,7 +134,7 @@ export function Navbar({
 
       {/* Mobile Menu */}
       {isMenuOpen && (
-        <div className="md:hidden bg-[#0F172A] border-t border-white/10">
+      <div className="lg:hidden bg-[#0F172A] border-t border-white/10 absolute top-[72px] left-0 w-full z-[9999]">
           <div className="px-4 py-4 space-y-1">
             {navItems.map((item) => {
               const isActive =
