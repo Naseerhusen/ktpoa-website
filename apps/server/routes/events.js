@@ -65,8 +65,8 @@ router.put('/:id', async (req, res) => {
 // POST /api/admin/login
 router.post('/admin/login', loginLimiter, (req, res) => {
   const { id, password } = req.body;
-  const adminId = process.env.ADMIN_ID || 'ktpoa';
-  const adminPassword = process.env.ADMIN_PASSWORD || 'ktpoa@2025';
+  const adminId = process.env.ADMIN_ID || 'ktpoaadmin';
+  const adminPassword = process.env.ADMIN_PASSWORD || 'Ktpoa2025';
 
   if (id === adminId && password === adminPassword) {
     res.json({ success: true, message: 'Login successful' });

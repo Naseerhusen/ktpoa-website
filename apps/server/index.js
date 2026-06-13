@@ -30,6 +30,6 @@ app.get('/api/v1/health', (_req, res) => {
 });
 
 app.listen(PORT, () => {
-  console.log(`🚀 KTPOA backend server running on http://localhost:${PORT}`);
+  console.log(`🚀 KTPOA backend server running on https://ktpoa-website.onrender.com`);
 });
 // no ballss

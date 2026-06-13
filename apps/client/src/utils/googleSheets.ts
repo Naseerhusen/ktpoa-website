@@ -20,10 +20,10 @@
 
 // Replace these with your Google Apps Script Web App URLs
 const GOOGLE_SHEETS_URLS = {
-  tpo: 'YOUR_TPO_GOOGLE_APPS_SCRIPT_URL_HERE',
-  industry: 'YOUR_INDUSTRY_GOOGLE_APPS_SCRIPT_URL_HERE',
-  student: 'YOUR_STUDENT_GOOGLE_APPS_SCRIPT_URL_HERE',
-  contact: 'YOUR_CONTACT_GOOGLE_APPS_SCRIPT_URL_HERE'
+  tpo: 'https://script.google.com/macros/s/AKfycbzF9prrWw1HR3-WJA498D9jMcjlhzBxrqx5Iodzsy_S0_EKzfHp8OrjPM69HsTJMrO2/exec',
+  industry: 'https://script.google.com/macros/s/AKfycbxGGqmqwKTeHr4FkSpXB8VJqTc0c7zs8tcDQzIVEOaIghsv1qT4sLRlGM2B2Cz340e-/exec',
+  student: 'https://script.google.com/macros/s/AKfycbxL7hCl2AQ_H8TksgW-8_gqDcs-JtmXVb1Mdvv2O7TPxPNltc2Rx-21lJt1FBkPQjNNRw/exec',
+  contact: 'https://script.google.com/macros/s/AKfycbxXq8RlPMq8BH4vyiHnBR-Owhjg6l9qPQom48jKiOde3tk9dm8cP7jObF6VoJbfTPsXOA/exec'
 };
 
 export async function submitToGoogleSheets(
