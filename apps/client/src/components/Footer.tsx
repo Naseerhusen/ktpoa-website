@@ -82,16 +82,16 @@ export function Footer({ onNavigate }: FooterProps) {
                   href="mailto:info@ktpoa.org"
                   className="text-slate-400 hover:text-white text-sm transition-colors"
                 >
-                  info@ktpoa.org
+                  secretary@ktpoa.org
                 </a>
               </li>
               <li className="flex items-center gap-3">
                 <Phone className="h-4 w-4 text-[#EAB308] flex-shrink-0" />
                 <a
-                  href="tel:+918012345678"
+                  href="tel:+919886376024"
                   className="text-slate-400 hover:text-white text-sm transition-colors"
                 >
-                  +91 80 1234 5678
+                  +91 9886376024
                 </a>
               </li>
               <li className="flex items-center gap-3">
