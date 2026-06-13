@@ -17,6 +17,7 @@ import { useRef, useState, useEffect } from "react";
 import { Footer } from "./Footer";
 import { ScrollToTop } from "./ScrollToTop";
 const hemamaliniPhoto = '/images/cd67160cd5ff3195a83045aed3ab56f8647b87fe.png';
+const nabiPhoto = '/images/nabi.jpeg';
 import { AnimatePresence } from "motion/react";
 
 interface ExecutiveMember {
@@ -84,7 +85,7 @@ export function ExecutiveMembersPage({
       position: "General Secretary, KTPOA",
       message:
         "Effective coordination and seamless communication are the backbone of successful placement operations. At KTPOA, we ensure that every member institution receives the support and resources needed to excel. Our network is our strength, and together we create opportunities that change lives.",
-      image: undefined,
+      image: nabiPhoto,
     },
     {
       name: "Mr. SANTOSH KUMAR B.S",
@@ -215,6 +216,7 @@ export function ExecutiveMembersPage({
         "Streamlined membership processes",
         "Increased membership by 80% in 3 years",
       ],
+      image: nabiPhoto,
       linkedin: "https://www.linkedin.com/in/nabi",
     },
     {
