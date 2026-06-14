@@ -23,10 +23,14 @@ export function AboutUsSection() {
           About KTPOA
         </h2>
         <p className="text-slate-600 text-base md:text-lg leading-relaxed">
-          The Karnataka Training & Placement Officers Association (KTPOA) is a professional body dedicated to
-          uniting placement officers, training coordinators, and career counsellors from educational institutions
-          across Karnataka. We serve as the bridge connecting academia with industry, ensuring that students receive
-          the guidance, skills, and opportunities they need to thrive in today's competitive job market.
+          The Karnataka Training and Placement Officers’ Association
+(KTPOA) is a professional body dedicated to bridging the gap between academia and industry. We connect educational
+institutions with leading employers across Karnataka, facilitating campus placements, skill development programs,
+and industry partnerships. Our mission is to ensure every student gets access to quality career opportunities through
+structured training, corporate engagement, and placement drives.
+With a network of 200+ member institutions and 500+ corporate partners, KTPOA has been instrumental in
+shaping the placement ecosystem across Bengaluru and Karnataka since its inception.
+
         </p>
       </div>
     </motion.section>

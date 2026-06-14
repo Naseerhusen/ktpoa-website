@@ -1,4 +1,4 @@
-import { Menu, X } from "lucide-react";
+import { Menu, X, ChevronDown } from "lucide-react";
 import { useState, useEffect } from "react";
 import { useIsMobile } from "../hooks/use-mobile";
 const logoImage = '/images/2135abd8723dc81edc9e85faf50aaf699dee149d.png';
@@ -13,6 +13,7 @@ export function Navbar({
   setCurrentPage,
 }: NavbarProps) {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [showTeamDropdown, setShowTeamDropdown] = useState<boolean>(false);
   const [isVisible, setIsVisible] = useState(true);
   const [lastScrollY, setLastScrollY] = useState(0);
   const isMobile = useIsMobile();
@@ -39,14 +40,22 @@ export function Navbar({
 
 
   const navItems = [
-    { id: "about", label: "About" },
-    { id: "pillars", label: "Pillars" },
-    { id: "executive-members", label: "Executive Members" },
-    { id: "events", label: "Events" },
-    { id: "benefits", label: "Benefits" },
-    { id: "faq", label: "FAQ" },
-    { id: "gallery", label: "Gallery" },
-  ];
+  { id: "about", label: "About" },
+  { id: "pillars", label: "Pillars" },
+  {
+    id: "our-team",
+    label: "Our Team",
+    dropdown: [
+      { id: "office-bearers", label: "Office Bearers" },
+      { id: "executive-members", label: "Executive Members" },
+      { id: "members", label: "Members" }
+    ]
+  },
+  { id: "events", label: "Events" },
+  { id: "benefits", label: "Benefits" },
+  { id: "faq", label: "FAQ" },
+  { id: "gallery", label: "Gallery" },
+];
 
   const handleNavClick = (pageId: string) => {
     if (pageId === "pillars") {
@@ -88,28 +97,70 @@ export function Navbar({
 
         {/* Desktop Nav Links */}
         <div className="hidden lg:flex items-center justify-center absolute left-1/2 -translate-x-1/2 gap-8">
-          {navItems.map((item) => {
-            const isActive =
-              (item.id === "about" && currentPage === "home") ||
-              currentPage === item.id;
-            return (
-              <button
-                key={item.id}
-                onClick={() => handleNavClick(item.id)}
-                className={`relative text-sm font-semibold transition-all duration-200 pb-1.5 ${
-                  isActive
-                    ? "text-white"
-                    : "text-slate-300 hover:text-white"
-                }`}
-              >
-                {item.label}
-                {isActive && (
-                  <span className="absolute bottom-0 left-0 right-0 h-[2px] bg-white rounded-full" />
-                )}
-              </button>
-            );
-          })}
+  {navItems.map((item) => {
+
+    if (item.dropdown) {
+      return (
+        <div
+          key={item.id}
+          className="relative"
+          onMouseEnter={() => setShowTeamDropdown(true)}
+          onMouseLeave={() => setShowTeamDropdown(false)}
+        >
+          <button
+  className={`flex items-center gap-1 text-sm font-semibold ${
+    ["office-bearers", "executive-members", "members"].includes(currentPage)
+      ? "text-white"
+      : "text-slate-300 hover:text-white"
+  }`}
+>
+            {item.label}
+            <ChevronDown size={16} />
+          </button>
+
+          {showTeamDropdown && (
+            <div className="absolute top-full left-0 mt-2 w-56 bg-white rounded-lg shadow-xl overflow-hidden">
+              {item.dropdown.map((subItem) => (
+                <button
+                  key={subItem.id}
+                  onClick={() => handleNavClick(subItem.id)}
+                  className="block w-full text-left px-4 py-3 text-sm text-slate-700 hover:bg-slate-100"
+                >
+                  {subItem.label}
+                </button>
+              ))}
+            </div>
+          )}
         </div>
+      );
+    }
+
+    const isActive =
+  (item.id === "about" && currentPage === "home") ||
+  currentPage === item.id ||
+  (
+    item.id === "our-team" &&
+    ["office-bearers", "executive-members", "members"].includes(currentPage)
+  );
+
+    return (
+      <button
+        key={item.id}
+        onClick={() => handleNavClick(item.id)}
+        className={`relative text-sm font-semibold transition-all duration-200 pb-1.5 ${
+          isActive
+            ? "text-white"
+            : "text-slate-300 hover:text-white"
+        }`}
+      >
+        {item.label}
+        {isActive && (
+          <span className="absolute bottom-0 left-0 right-0 h-[2px] bg-white rounded-full" />
+        )}
+      </button>
+    );
+  })}
+</div>
 
         {/* CTA Button */}
         <div className="hidden md:block">
@@ -137,23 +188,45 @@ export function Navbar({
       <div className="lg:hidden bg-[#0F172A] border-t border-white/10 absolute top-[72px] left-0 w-full z-[9999]">
           <div className="px-4 py-4 space-y-1">
             {navItems.map((item) => {
-              const isActive =
-                (item.id === "about" && currentPage === "home") ||
-                currentPage === item.id;
-              return (
-                <button
-                  key={item.id}
-                  onClick={() => handleNavClick(item.id)}
-                  className={`block w-full text-left px-4 py-3 rounded-lg text-sm font-medium transition-all ${
-                    isActive
-                      ? "bg-white/10 text-white"
-                      : "text-slate-300 hover:bg-white/5 hover:text-white"
-                  }`}
-                >
-                  {item.label}
-                </button>
-              );
-            })}
+
+  if (item.dropdown) {
+    return (
+      <div key={item.id}>
+        <div className="px-4 py-3 text-white font-semibold">
+          {item.label}
+        </div>
+
+        {item.dropdown.map((subItem) => (
+          <button
+            key={subItem.id}
+            onClick={() => handleNavClick(subItem.id)}
+            className="block w-full text-left pl-8 py-2 text-slate-300 hover:text-white"
+          >
+            {subItem.label}
+          </button>
+        ))}
+      </div>
+    );
+  }
+
+  const isActive =
+    (item.id === "about" && currentPage === "home") ||
+    currentPage === item.id;
+
+  return (
+    <button
+      key={item.id}
+      onClick={() => handleNavClick(item.id)}
+      className={`block w-full text-left px-4 py-3 rounded-lg text-sm font-medium ${
+        isActive
+          ? "bg-white/10 text-white"
+          : "text-slate-300 hover:bg-white/5 hover:text-white"
+      }`}
+    >
+      {item.label}
+    </button>
+  );
+})}
             <div className="pt-3">
               <button
                 onClick={() => handleNavClick("registration")}

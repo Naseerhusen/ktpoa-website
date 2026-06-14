@@ -18,6 +18,8 @@ import { Footer } from "./Footer";
 import { ScrollToTop } from "./ScrollToTop";
 const hemamaliniPhoto = '/images/cd67160cd5ff3195a83045aed3ab56f8647b87fe.png';
 const nabiPhoto = '/images/nabi.jpeg';
+const vandanaPhoto = '/images/Vandana.jpeg';
+const bheemeswaraPhoto = '/images/Bheemeswara_Reddy.jpeg';
 import { AnimatePresence } from "motion/react";
 
 interface ExecutiveMember {
@@ -117,175 +119,11 @@ export function ExecutiveMembersPage({
 
   const executives: ExecutiveMember[] = [
     {
-      name: "Prof. GURUCHARAN SINGH",
-      position: "Honorary President",
-      institution: "Sapthagiri NPS University, Bangalore",
-      qualifications: "Ph.D., M.Tech, B.E.",
-      email: "gurucharan.singh@ktpoa.org",
-      about:
-        "Prof. Gurucharan Singh is a distinguished educator and administrator with over 25 years of experience in higher education and placement activities.",
-      areasOfExpertise: [
-        "Strategic Leadership",
-        "Educational Administration",
-        "Industry Partnerships",
-      ],
-      keyAchievements: [
-        "Pioneered placement initiatives across Karnataka",
-        "Established KTPOA as a premier professional body",
-        "Mentored hundreds of TPOs across the state",
-      ],
-      linkedin: "https://www.linkedin.com/in/gurucharan-singh",
-    },
-    {
-      name: "Prof. N RAVIKUMAR",
-      position: "President",
-      institution:
-        "Rajiv Gandhi Institute of Technology, Bangalore",
-      qualifications:
-        "Master in HR, Diploma & Degree in Electronics",
-      email: "n.ravikumar@ktpoa.org",
-      about:
-        "Prof. N. Ravikumar holds a Diploma and Degree in Electronics & Master in HR, with more than 40 plus years of experience in both Industry & Academia. He entered the industry with BPL India Ltd as a Service Engineer in 1983 and worked till 2000 in various capacities including Branch Manager, Imports Manager, Service Head, and Regional Head. He started his journey in academics as Placement Head from 2003 and continues till date. As a placement counselor and advisor, he conducts tech talks and motivational sessions to students, guiding them for an appropriate career path.",
-      areasOfExpertise: [
-        "Corporate Relations",
-        "Industry-Academia Liaison",
-        "Placement Strategy",
-        "Career Counseling",
-        "Student Training & Development",
-        "Campus Recruitment",
-        "Strategic Partnerships",
-      ],
-      keyAchievements: [
-        "40+ years of combined experience in Industry (BPL India Ltd, 1983-2000) and Academia (2003-present)",
-        "Worked in various leadership roles: Branch Manager, Imports Manager, Service Head, Regional Head at BPL India Ltd",
-        "Instrumental in setting up Industry at Campus for manufacturing components for BOSCH, providing on-hand practice to students as interns",
-        "Established Centre of Excellence by TOYOTA at campus where students receive skill-based training leading to placements",
-        "Extensive experience in organizing placement drives - on campus, virtual, and off-campus placements",
-        "Conducts tech talks and motivational sessions for students, guiding them for appropriate career paths",
-        "Training students for campus placements at appropriate times during their studies",
-        "Strong liaison with industry partners for continuous student development and placement opportunities",
-      ],
-      linkedin: "https://www.linkedin.com/in/ravikumar",
-    },
-    {
-      name: "Dr. HEMAMALINI M J",
-      position: "Vice President",
-      institution:
-        "Acharya Institutes of Technology, Bangalore",
-      qualifications: "Ph.D in Social Work, M.S.W",
-      email: "hemamalini3416@gmail.com",
-      about:
-        "Dr. Hemamalini M.J is a dedicated Training & Placement professional with 20+ years of extensive experience in Recruitment, Training & Development, Talent Management, Student Counselling, and Academic Leadership. She has a proven track record in building strong industry–academia partnerships, enhancing campus placement outcomes, designing employability programs, and mentoring thousands of students for career success. Committed to driving institutional excellence through strategic planning, stakeholder engagement, and holistic student development.",
-      areasOfExpertise: [
-        "Campus Recruitment & Talent Acquisition",
-        "Training & Development",
-        "Industry–Academia Collaboration",
-        "Student Career Guidance & Counselling",
-        "Placement Strategy & Execution",
-        "Soft Skills and Employability Training",
-        "Stakeholder & Corporate Relationship Management",
-      ],
-      keyAchievements: [
-        "Ph.D in Social Work from Bangalore University, M.S.W in Personnel Management & Industrial Relations",
-        "Leading institute-wide placement strategy for Engineering, Management, and Non-Technical programs at Acharya Institutes",
-        "Built MoUs with MNCs for Centres of Excellence and industry-led skill programs",
-        "Received 100% UGC Travel Grant to present research in Canada (2019)",
-        "Significantly increased placement participation and student employability across 20+ years",
-        "Founded the Placement Forum (Bangalore) and organized high-impact placement events",
-        "Former Director – Strategic Planning at Wealthmax and Head – Training & Placements at mLAC",
-        "Trained thousands of students in soft skills, communication, and aptitude",
-      ],
-      image: hemamaliniPhoto,
-      linkedin: "https://www.linkedin.com/in/hemamalini",
-    },
-    {
-      name: "Dr. NABI A",
-      position: "General Secretary",
-      institution: "BMS College of Engineering, Bangalore",
-      qualifications: "Ph.D., M.Tech",
-      email: "nabi.a@ktpoa.org",
-      about:
-        "Prof. Dr. Nabi A manages the administrative and operational excellence of KTPOA, ensuring smooth coordination among all member institutions.",
-      areasOfExpertise: [
-        "Event Management",
-        "Administration",
-        "Coordination",
-      ],
-      keyAchievements: [
-        "Organized 75+ successful KTPOA events",
-        "Streamlined membership processes",
-        "Increased membership by 80% in 3 years",
-      ],
-      image: nabiPhoto,
-      linkedin: "https://www.linkedin.com/in/nabi",
-    },
-    {
-      name: "Prof. BABU REDDY N",
-      position: "Joint Secretary",
-      institution: "RV College of Engineering, Bangalore",
-      qualifications: "M.Tech, B.E.",
-      email: "babu.reddyn@ktpoa.org",
-      about:
-        "Prof. Babu Reddyn supports the secretarial functions and focuses on member engagement and communication initiatives.",
-      areasOfExpertise: [
-        "Member Relations",
-        "Communication",
-        "Networking",
-      ],
-      keyAchievements: [
-        "Enhanced member communication systems",
-        "Coordinated regional chapter activities",
-        "Improved member satisfaction by 60%",
-      ],
-      linkedin: "https://www.linkedin.com/in/babureddyn",
-    },
-    {
-      name: "Mr. SANTOSH KUMAR B S",
-      position: "Treasurer",
-      institution: "Sapthagiri NPS University, Bangalore",
-      qualifications: "MBA, B.Com",
-      email: "santosh.kumar.bs@ktpoa.org",
-      about:
-        "Mr. Santosh Kumar B.S contribute to building strong recruiter relationships, conducting effective training programs, and guiding students toward suitable career opportunities while improving overall career outcomes in KTPOA.",
-      areasOfExpertise: [
-        "Financial Management",
-        "Budgeting",
-        "Compliance",
-      ],
-      keyAchievements: [
-        "Enhanced Placement Performance",
-        "Strengthened Industry & Corporate Partnerships",
-        "Improved Student Employability & Career Readiness",
-      ],
-      linkedin: "https://www.linkedin.com/in/santoshkumar",
-    },
-    {
-      name: "Dr. H R ANANTH",
-      position: "Executive Committee Member",
-      institution:
-        "M.S. Ramaiah Institute of Technology, Bangalore",
-      qualifications: "Ph.D., M.E.",
-      email: "hr.ananth@ktpoa.org",
-      about:
-        "Dr. HR Ananth specializes in technology integration and digital transformation in placement processes.",
-      areasOfExpertise: [
-        "Digital Transformation",
-        "Technology Integration",
-        "Innovation",
-      ],
-      keyAchievements: [
-        "Launched KTPOA digital portal",
-        "Implemented online placement systems",
-        "Reduced placement cycle time by 40%",
-      ],
-      linkedin: "https://www.linkedin.com/in/hrananth",
-    },
-    {
       name: "Ms. VANDANA R",
       position: "Executive Committee Member",
       institution:
-        "JSS Science and Technology University, Mysore",
-      qualifications: "MBA, B.Tech",
+        "Sapthagiri NPS University,",
+      qualifications: "MBA, BBA in HR",
       email: "vandana.r@ktpoa.org",
       about:
         "Ms. Vandana R focuses on women empowerment and diversity initiatives in campus placements.",
@@ -299,6 +137,7 @@ export function ExecutiveMembersPage({
         "Launched women leadership programs",
         "Advocated for inclusive hiring practices",
       ],
+      image: vandanaPhoto,
       linkedin: "https://www.linkedin.com/in/vandanar",
     },
     {
@@ -323,7 +162,7 @@ export function ExecutiveMembersPage({
       linkedin: "https://www.linkedin.com/in/sharanagowda",
     },
     {
-      name: "Mr. RAKESHS",
+      name: "Mr. RAKESH S",
       position: "Executive Committee Member",
       institution: "NIE Institute of Technology, Mysore",
       qualifications: "MBA, B.E.",
@@ -365,8 +204,8 @@ export function ExecutiveMembersPage({
     {
       name: "Dr. BHEEMESWARA REDDY",
       position: "Executive Committee Member",
-      institution: "Siddaganga Institute of Technology, Tumkur",
-      qualifications: "Ph.D., M.E.",
+      institution: "RajaRajeswari College of Engineering",
+      qualifications: "Ph.D., MBA",
       email: "bheemeswara.reddy@ktpoa.org",
       about:
         "Dr. Bheemeswara Reddy brings expertise in research and academic excellence to placement strategies.",
@@ -380,6 +219,7 @@ export function ExecutiveMembersPage({
         "Improved placement quality metrics",
         "Enhanced TPO training standards",
       ],
+      image: bheemeswaraPhoto,
       linkedin: "https://www.linkedin.com/in/bheemeswara",
     },
     {

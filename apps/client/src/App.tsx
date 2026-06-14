@@ -13,6 +13,8 @@ import { ExecutiveMembersPage } from "./components/ExecutiveMembersPage";
 import { Toaster } from "./components/ui/sonner";
 import { motion, AnimatePresence } from "motion/react";
 import {GalleryPage} from "./components/GalleryPage";
+import { OfficeBearersPage } from "./components/OfficeBearersPage";
+import { MembersPage } from "./components/Memberspage";
 
 export default function App() {
   const [currentPage, setCurrentPage] = useState("home");
@@ -102,8 +104,44 @@ export default function App() {
       "industry-registration": IndustryRegistrationPage,
       "student-registration": StudentRegistrationPage,
       "executive-members": ExecutiveMembersPage,
+      "members": MembersPage,
       "gallery": GalleryPage,
     };
+    if (currentPage === "office-bearers") {
+  return (
+    <>
+      <Navbar
+        currentPage={currentPage}
+        setCurrentPage={setCurrentPage}
+      />
+      <OfficeBearersPage />
+    </>
+  );
+}
+
+if (currentPage === "executive-members") {
+  return (
+    <>
+      <Navbar
+        currentPage={currentPage}
+        setCurrentPage={setCurrentPage}
+      />
+      <ExecutiveMembersPage />
+    </>
+  );
+}
+
+if (currentPage === "members") {
+  return (
+    <>
+      <Navbar
+        currentPage={currentPage}
+        setCurrentPage={setCurrentPage}
+      />
+      <MembersPage />
+    </>
+  );
+}
 
     const PageComponent = pages[currentPage] || HomePage;
 

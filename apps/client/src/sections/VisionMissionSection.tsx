@@ -34,8 +34,10 @@ export function VisionMissionSection() {
               </h3>
             </div>
             <p className="text-slate-300 text-base leading-relaxed">
-              To build a collaborative and future-ready placement ecosystem across Karnataka that ensures every student
-              has access to meaningful career opportunities.
+              To be the leading platform that empowers every Training and Placement Officer in Karnataka, enhancing employability and
+career readiness by bridging the gap between academia and industry. We strive to create a skilled workforce ready for
+tomorrow's challenges and provide students across Karnataka with quality career opportunities through structured training,
+industry partnerships, and excellence in placement services.
             </p>
           </motion.div>
 

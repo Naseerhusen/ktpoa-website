@@ -96,7 +96,7 @@ export function Footer({ onNavigate }: FooterProps) {
               </li>
               <li className="flex items-center gap-3">
                 <MapPin className="h-4 w-4 text-[#EAB308] flex-shrink-0" />
-                <span className="text-slate-400 text-sm">Bangalore, Karnataka, India</span>
+                <span className="text-slate-400 text-sm">No.62, GF-01, Cheeranjeevi Layout, Kempapura, Hebbal, Bangalore, Karnataka, India-560024</span>
               </li>
             </ul>
 
