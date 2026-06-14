@@ -14,7 +14,7 @@ import { Toaster } from "./components/ui/sonner";
 import { motion, AnimatePresence } from "motion/react";
 import {GalleryPage} from "./components/GalleryPage";
 import { OfficeBearersPage } from "./components/OfficeBearersPage";
-import { MembersPage } from "./components/Memberspage";
+import { MembersPage } from "./components/MembersPage";
 
 export default function App() {
   const [currentPage, setCurrentPage] = useState("home");
