@@ -25,6 +25,7 @@ const matheenullaPhoto = '/images/Matheen_sir.jpeg';
 const pradeepPhoto = '/images/Pradeep N E.png';
 const sindhuPhoto = '/images/Sindhu Shekar.jpg';
 const spoorthyPhoto = '/images/spoorthy sollapur.jpg';
+const tejaswiniPhoto = '/images/Tejaswini Begur.jpg';
 import { AnimatePresence } from "motion/react";
 
 interface ExecutiveMember {
@@ -174,7 +175,15 @@ export function MembersPage ({
       email: "Spoorthy011@gmail.com",
       image: spoorthyPhoto,
     },
-    
+    {
+      name: "Mrs. Tejaswini B N",
+      position: "Member",
+      institution:
+        "City Engineering College, Bangalore",
+      qualifications: "M.Tech, B.E",
+      email: "tejaswini.begur@gmail.com",
+      image: tejaswiniPhoto,
+    },
  
   ];
 
