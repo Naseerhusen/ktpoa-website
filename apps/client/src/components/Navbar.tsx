@@ -13,7 +13,6 @@ export function Navbar({
   setCurrentPage,
 }: NavbarProps) {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const [showTeamDropdown, setShowTeamDropdown] = useState<boolean>(false);
   const [isVisible, setIsVisible] = useState(true);
   const [lastScrollY, setLastScrollY] = useState(0);
   const isMobile = useIsMobile();
@@ -102,48 +101,43 @@ export function Navbar({
     if (item.dropdown) {
       return (
         <div
-          key={item.id}
-          className="relative group"
-        >
-          <button
-  className={`flex items-center gap-1 text-sm font-semibold leading-none ${
-    ["office-bearers", "executive-members", "members"].includes(currentPage)
-      ? "text-white"
-      : "text-slate-300 hover:text-white"
-  }`}
+  key={item.id}
+  className="relative group"
 >
-            {item.label}
-            <ChevronDown size={16} className="mt-[1px]" />
-          </button>
+  <button className="flex items-center gap-1 text-sm font-semibold text-slate-300 hover:text-white">
+    {item.label}
+    <ChevronDown size={14} />
+  </button>
 
-          <div
-  className="
-    absolute top-full left-0 w-60
-    bg-[#0F172A]
-    border border-[#EAB308]/20
-    rounded-lg
-    shadow-2xl
-    overflow-hidden
-    opacity-0
-    invisible
-    group-hover:opacity-100
-    group-hover:visible
-    transition-all duration-200
-  "
->
-            <div className="absolute top-full left-0 mt-3 w-60 bg-[#0F172A] border border-white/10 rounded-xl shadow-2xl overflow-hidden">
-              {item.dropdown.map((subItem) => (
-                <button
-                  key={subItem.id}
-                  onClick={() => handleNavClick(subItem.id)}
-                  className="block w-full text-left px-5 py-3 text-sm font-medium text-slate-300 hover:bg-white/5 hover:text-[#EAB308] transition-all duration-200"
-                >
-                  {subItem.label}
-                </button>
-              ))}
-            </div>
-          </div>
-        </div>
+  <div
+    className="
+      absolute top-full left-0 pt-2
+      w-60
+      bg-[#0F172A]
+      border border-[#EAB308]/20
+      rounded-lg
+      shadow-2xl
+      overflow-hidden
+      opacity-0
+      invisible
+      group-hover:opacity-100
+      group-hover:visible
+      transition-all duration-200
+      z-[9999]
+    "
+  >
+    <div className="absolute -top-2 left-0 w-full h-2"></div>
+    {item.dropdown.map((subItem) => (
+      <button
+        key={subItem.id}
+        onClick={() => handleNavClick(subItem.id)}
+        className="block w-full text-left px-5 py-3 text-sm font-medium text-slate-200 hover:bg-[#EAB308] hover:text-[#0F172A] transition-all"
+      >
+        {subItem.label}
+      </button>
+    ))}
+  </div>
+</div>
       );
     }
 
