@@ -108,23 +108,23 @@ export function Navbar({
           onMouseLeave={() => setShowTeamDropdown(false)}
         >
           <button
-  className={`flex items-center gap-1 text-sm font-semibold ${
+  className={`flex items-center gap-1 text-sm font-semibold leading-none ${
     ["office-bearers", "executive-members", "members"].includes(currentPage)
       ? "text-white"
       : "text-slate-300 hover:text-white"
   }`}
 >
             {item.label}
-            <ChevronDown size={16} />
+            <ChevronDown size={14} className="mt-[1px]" />
           </button>
 
           {showTeamDropdown && (
-            <div className="absolute top-full left-0 mt-2 w-56 bg-white rounded-lg shadow-xl overflow-hidden">
+            <div className="absolute top-full left-0 mt-3 w-60 bg-[#0F172A] border border-white/10 rounded-xl shadow-2xl overflow-hidden">
               {item.dropdown.map((subItem) => (
                 <button
                   key={subItem.id}
                   onClick={() => handleNavClick(subItem.id)}
-                  className="block w-full text-left px-4 py-3 text-sm text-slate-700 hover:bg-slate-100"
+                  className="block w-full text-left px-5 py-3 text-sm font-medium text-slate-300 hover:bg-white/5 hover:text-[#EAB308] transition-all duration-200"
                 >
                   {subItem.label}
                 </button>
@@ -200,7 +200,7 @@ export function Navbar({
           <button
             key={subItem.id}
             onClick={() => handleNavClick(subItem.id)}
-            className="block w-full text-left pl-8 py-2 text-slate-300 hover:text-white"
+            className="block w-full text-left pl-8 py-2 text-slate-300 hover:text-[#EAB308]"
           >
             {subItem.label}
           </button>
