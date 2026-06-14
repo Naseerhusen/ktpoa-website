@@ -103,9 +103,7 @@ export function Navbar({
       return (
         <div
           key={item.id}
-          className="relative"
-          onMouseEnter={() => setShowTeamDropdown(true)}
-          onMouseLeave={() => setShowTeamDropdown(false)}
+          className="relative group"
         >
           <button
   className={`flex items-center gap-1 text-sm font-semibold leading-none ${
@@ -115,10 +113,24 @@ export function Navbar({
   }`}
 >
             {item.label}
-            <ChevronDown size={14} className="mt-[1px]" />
+            <ChevronDown size={16} className="mt-[1px]" />
           </button>
 
-          {showTeamDropdown && (
+          <div
+  className="
+    absolute top-full left-0 w-60
+    bg-[#0F172A]
+    border border-[#EAB308]/20
+    rounded-lg
+    shadow-2xl
+    overflow-hidden
+    opacity-0
+    invisible
+    group-hover:opacity-100
+    group-hover:visible
+    transition-all duration-200
+  "
+>
             <div className="absolute top-full left-0 mt-3 w-60 bg-[#0F172A] border border-white/10 rounded-xl shadow-2xl overflow-hidden">
               {item.dropdown.map((subItem) => (
                 <button
@@ -130,7 +142,7 @@ export function Navbar({
                 </button>
               ))}
             </div>
-          )}
+          </div>
         </div>
       );
     }
