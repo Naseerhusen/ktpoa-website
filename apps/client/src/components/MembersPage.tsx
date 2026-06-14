@@ -355,13 +355,7 @@ export function MembersPage ({
                         <Mail className="h-4 w-4 flex-shrink-0 mt-0.5 text-[#1E293B]" />
                         <span>{member.email}</span>
                       </div>
-                    )}
-                    
-                    {/* View Profile Link */}
-                    /*<div className="w-full flex items-center justify-center gap-2 text-[#1E293B] hover:text-[#C9A870] font-medium text-sm mt-4 pt-4 border-t border-gray-100 transition-colors">
-                      <span>View Full Profile</span>
-                      <ArrowRight className="h-4 w-4" />
-                    </div>*/
+                    )}                    
                   </CardContent>
                 </Card>
               </motion.div>
