@@ -19,6 +19,7 @@ import { ScrollToTop } from "./ScrollToTop";
 const hemamaliniPhoto = '/images/cd67160cd5ff3195a83045aed3ab56f8647b87fe.png';
 const nabiPhoto = '/images/nabi.jpeg';
 const santoshPhoto = '/images/Santhosh Kumar.jpg';
+const babuReddyPhoto = '/images/babureddy.jpeg';
 import { AnimatePresence } from "motion/react";
 
 interface ExecutiveMember {
@@ -223,8 +224,8 @@ export function OfficeBearersPage({
     {
       name: "Prof. BABU REDDY N",
       position: "Joint Secretary",
-      institution: "RV College of Engineering, Bangalore",
-      qualifications: "M.Tech, B.E.",
+      institution: "R. L. Jalappa Group of Institutions",
+      qualifications: "M.B.A, M.Com (Ph.D)",
       email: "babu.reddyn@ktpoa.org",
       about:
         "Prof. Babu Reddy N supports the secretarial functions and focuses on member engagement and communication initiatives.",
@@ -238,7 +239,8 @@ export function OfficeBearersPage({
         "Coordinated regional chapter activities",
         "Improved member satisfaction by 60%",
       ],
-      linkedin: "https://www.linkedin.com/in/babureddyn",
+      image: babuReddyPhoto,
+      linkedin: "www.linkedin.com/in/babureddy-nagasandra-97511520",
     },
     {
       name: "Dr. H R ANANTH",

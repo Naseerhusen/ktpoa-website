@@ -180,7 +180,7 @@ export function MembersPage ({
       position: "Member",
       institution:
         "City Engineering College, Bangalore",
-      qualifications: "M.Tech, B.E",
+      qualifications: "M.Tech, B.E in Computer Science & Engineering",
       email: "tejaswini.begur@gmail.com",
       image: tejaswiniPhoto,
     },
