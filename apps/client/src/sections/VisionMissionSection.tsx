@@ -43,17 +43,18 @@ industry partnerships, and excellence in placement services.
 
           {/* Mission Card */}
           <motion.div
-            initial={{ opacity: 0, x: 30 }}
+            initial={{ opacity: 0, x: -30 }}
             animate={isInView ? { opacity: 1, x: 0 } : {}}
-            transition={{ duration: 0.7, delay: 0.1 }}
+            transition={{ duration: 0.7 }}
             className="bg-[#1E293B] rounded-2xl p-10"
           >
             <div className="flex items-center gap-4 mb-7">
+              {/* Gold gradient icon square */}
               <div
                 className="w-14 h-14 rounded-xl flex items-center justify-center flex-shrink-0 shadow-md"
                 style={{ background: "linear-gradient(135deg, #C9A870 0%, #EAB308 100%)" }}
               >
-                <Target className="h-7 w-7 text-[#0F172A]" />
+                <Eye className="h-7 w-7 text-[#0F172A]" />
               </div>
               <h3
                 className="text-2xl font-bold text-white"
@@ -62,16 +63,10 @@ industry partnerships, and excellence in placement services.
                 Our Mission
               </h3>
             </div>
-            <ul className="space-y-4 text-slate-300 leading-relaxed">
-              {[
-                "KTPOA is committed to enhance employability through skill development and empower placement professionals through collaboration, knowledge sharing, and the adoption of best practices in talent development and workforce readiness."
-              ].map((item, i) => (
-                <li key={i} className="flex items-center gap-3">
-                  <div className="w-1.5 h-1.5 rounded-full bg-[#EAB308] flex-shrink-0" />
-                  <span>{item}</span>
-                </li>
-              ))}
-            </ul>
+            <p className="text-slate-300 text-base leading-relaxed">
+              KTPOA is committed to enhance employability through skill development and empower placement professionals through
+collaboration, knowledge sharing, and the adoption of best practices in talent development and workforce readiness.
+            </p>
           </motion.div>
 
         </div>
