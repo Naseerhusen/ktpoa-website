@@ -222,13 +222,13 @@ export function OfficeBearersPage({
       linkedin: "https://www.linkedin.com/in/nabi",
     },
     {
-      name: "Prof. BABU REDDY N",
+      name: "Prof. BABUREDDY N.S",
       position: "Joint Secretary",
       institution: "R. L. Jalappa Group of Institutions",
       qualifications: "M.B.A, M.Com (Ph.D)",
       email: "babu.reddyn@ktpoa.org",
       about:
-        "Prof. Babu Reddy N supports the secretarial functions and focuses on member engagement and communication initiatives.",
+        "Prof. Babu Reddy N.S supports the secretarial functions and focuses on member engagement and communication initiatives.",
       areasOfExpertise: [
         "Member Relations",
         "Communication",

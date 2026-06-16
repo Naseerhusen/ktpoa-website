@@ -26,6 +26,7 @@ const pradeepPhoto = '/images/Pradeep N E.png';
 const sindhuPhoto = '/images/Sindhu Shekar.jpg';
 const spoorthyPhoto = '/images/spoorthy sollapur.jpg';
 const tejaswiniPhoto = '/images/Tejaswini Begur.jpg';
+const ravindraPhoto = '/images/Ravindra Thube.jpg';
 import { AnimatePresence } from "motion/react";
 
 interface ExecutiveMember {
@@ -183,6 +184,15 @@ export function MembersPage ({
       qualifications: "M.Tech, B.E in Computer Science & Engineering",
       email: "tejaswini.begur@gmail.com",
       image: tejaswiniPhoto,
+    },
+    {
+      name: "Mr. Ravindra Thube",
+      position: "Member",
+      institution:
+        "HKBK Group of Institutions",
+      qualifications: "M.Tech IIT Kharagpur, MBA IIM Kozhikode",
+      email: "ravithube1987@gmail.com",
+      image: ravindraPhoto,
     },
  
   ];

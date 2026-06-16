@@ -62,12 +62,9 @@ industry partnerships, and excellence in placement services.
                 Our Mission
               </h3>
             </div>
-            <ul className="space-y-4 text-slate-300 text-base">
+            <ul className="space-y-4 text-slate-300 leading-relaxed">
               {[
-                "Strengthen industry-institution partnerships",
-                "Enhance employability through skill development",
-                "Promote best practices in campus recruitment",
-                "Elevate the professional stature of placement officers",
+                "KTPOA is committed to enhance employability through skill development and empower placement professionals through collaboration, knowledge sharing, and the adoption of best practices in talent development and workforce readiness."
               ].map((item, i) => (
                 <li key={i} className="flex items-center gap-3">
                   <div className="w-1.5 h-1.5 rounded-full bg-[#EAB308] flex-shrink-0" />

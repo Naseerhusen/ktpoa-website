@@ -20,6 +20,7 @@ const hemamaliniPhoto = '/images/cd67160cd5ff3195a83045aed3ab56f8647b87fe.png';
 const nabiPhoto = '/images/nabi.jpeg';
 const vandanaPhoto = '/images/Vandana.jpeg';
 const bheemeswaraPhoto = '/images/Bheemeswara_Reddy.jpeg';
+const celestinaPhoto = '/images/Celestina Suresh.jpg';
 import { AnimatePresence } from "motion/react";
 
 interface ExecutiveMember {
@@ -182,13 +183,13 @@ export function ExecutiveMembersPage({
       linkedin: "https://www.linkedin.com/in/rakeshs",
     },
     {
-      name: "Ms. SALESTENA MARY T",
+      name: "Ms. Celestina Suresh (Salestena Mary)",
       position: "Executive Committee Member",
-      institution: "St. Joseph Engineering College, Mangalore",
-      qualifications: "M.Tech, B.E.",
-      email: "salestena.mary@ktpoa.org",
+      institution: "MS RAMAIAH UNIVERSITY  OF APPLIED SCIENCES",
+      qualifications: "MBA",
+      email: "celestina4suresh@gmail.com",
       about:
-        "Ms. Salestena Mary T specializes in curriculum development aligned with industry requirements.",
+        "Ms. Celestina Suresh (Salestena Mary) specializes in curriculum development aligned with industry requirements.",
       areasOfExpertise: [
         "Curriculum Development",
         "Industry-Academia Collaboration",
@@ -199,7 +200,8 @@ export function ExecutiveMembersPage({
         "Established 40+ MoUs with companies",
         "Mentored 300+ placement officers",
       ],
-      linkedin: "https://www.linkedin.com/in/salestenamary",
+      image: celestinaPhoto,
+      linkedin: "https://www.linkedin.com/in/celestina-suresh-6528622b",
     },
     {
       name: "Dr. BHEEMESWARA REDDY",
