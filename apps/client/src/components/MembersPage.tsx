@@ -27,7 +27,7 @@ const sindhuPhoto = '/images/Sindhu Shekar.jpg';
 const spoorthyPhoto = '/images/spoorthy sollapur.jpg';
 const tejaswiniPhoto = '/images/Tejaswini Begur.jpg';
 const ravindraPhoto = '/images/Ravindra Thube.jpg';
-const nageshPhoto = '/images/SALIMATH NAGESH.jpg';
+const nageshPhoto = '/images/SALIMATH NAGESH.jpeg';
 const kumaraPhoto = '/images/Kumar Mallaiah.jpg';
 import { AnimatePresence } from "motion/react";
 
