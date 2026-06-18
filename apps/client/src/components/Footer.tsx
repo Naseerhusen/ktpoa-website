@@ -24,7 +24,9 @@ export function Footer({ onNavigate }: FooterProps) {
   const quickLinks = [
     { label: "About", id: "home" },
     { label: "Pillars", id: "pillars" },
+    { label: "office bearers", id: "office-bearers" },
     { label: "Executive Members", id: "executive-members" },
+    { label: "Members", id: "members" },
     { label: "Events", id: "events" },
     { label: "Benefits", id: "benefits" },
     { label: "Contact", id: "contact" },

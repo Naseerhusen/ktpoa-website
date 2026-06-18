@@ -27,6 +27,8 @@ const sindhuPhoto = '/images/Sindhu Shekar.jpg';
 const spoorthyPhoto = '/images/spoorthy sollapur.jpg';
 const tejaswiniPhoto = '/images/Tejaswini Begur.jpg';
 const ravindraPhoto = '/images/Ravindra Thube.jpg';
+const nageshPhoto = '/images/SALIMATH NAGESH.jpg';
+const kumaraPhoto = '/images/Kumar Mallaiah.jpg';
 import { AnimatePresence } from "motion/react";
 
 interface ExecutiveMember {
@@ -166,6 +168,24 @@ export function MembersPage ({
       qualifications: "MBA in Human Resource Management, B.Sc",
       email: "sindhu.gudibande82@gmail.com",
       image: sindhuPhoto,
+    },
+    {
+      name: "Dr.Nagesh S Salimath",
+      position: "Member",
+      institution:
+        "PDA COLLEGE OF ENGINEERING",
+      qualifications: "Ph.D",
+      email: "nageshsalimath@pdacek.ac.in",
+      image: nageshPhoto,
+    },
+    {
+      name: "Kumara M",
+      position: "Member",
+      institution:
+        "SJB Institute of Technology",
+      qualifications: "MBA-HR",
+      email: "placement@sjbit.edu.in",
+      image: kumaraPhoto,
     },
     {
       name: "Mrs. Spoorthy Mahadikar ",
