@@ -21,6 +21,7 @@ const nabiPhoto = '/images/nabi.jpeg';
 const vandanaPhoto = '/images/Vandana.jpeg';
 const bheemeswaraPhoto = '/images/Bheemeswara_Reddy.jpeg';
 const celestinaPhoto = '/images/Celestina Suresh.jpg';
+const rashmiPhoto = '/images/Rashmi.jpeg';
 import { AnimatePresence } from "motion/react";
 
 interface ExecutiveMember {
@@ -245,10 +246,10 @@ export function ExecutiveMembersPage({
       linkedin: "https://www.linkedin.com/in/anandkumar",
     },
     {
-      name: "Mrs. RASHMI",
+      name: "Mrs. Rashmi Rajeev",
       position: "Executive Committee Member",
       institution:
-        "The Oxford College of Engineering, Bangalore",
+        "Sambhram Group of Institutions",
       qualifications: "M.Tech, B.E.",
       email: "rashmi@ktpoa.org",
       about:
@@ -263,6 +264,7 @@ export function ExecutiveMembersPage({
         "Developed career guidance frameworks",
         "Improved student career readiness",
       ],
+      image: rashmiPhoto,
       linkedin: "https://www.linkedin.com/in/rashmi",
     },
     {
