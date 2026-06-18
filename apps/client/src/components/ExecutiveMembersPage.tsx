@@ -250,8 +250,8 @@ export function ExecutiveMembersPage({
       position: "Executive Committee Member",
       institution:
         "Sambhram Group of Institutions",
-      qualifications: "M.Tech, B.E.",
-      email: "rashmi@ktpoa.org",
+      qualifications: "MBA",
+      email: "placements@sambhram.org",
       about:
         "Mrs. Rashmi focuses on student counseling and career guidance programs across member institutions.",
       areasOfExpertise: [
