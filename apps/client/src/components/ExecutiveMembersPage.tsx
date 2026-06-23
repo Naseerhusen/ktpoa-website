@@ -22,6 +22,7 @@ const vandanaPhoto = '/images/Vandana.jpeg';
 const bheemeswaraPhoto = '/images/Bheemeswara_Reddy.jpeg';
 const celestinaPhoto = '/images/Celestina Suresh.jpg';
 const rashmiPhoto = '/images/Rashmi.jpeg';
+const netravathiPhoto = '/images/Nethravathi.jpeg';
 import { AnimatePresence } from "motion/react";
 
 interface ExecutiveMember {
@@ -270,8 +271,8 @@ export function ExecutiveMembersPage({
     {
       name: "Mr. MUJTHABA WASEEM K",
       position: "Executive Committee Member",
-      institution: "KLE Technological University, Hubli",
-      qualifications: "MBA, B.E.",
+      institution: "KNS Institute of Technology",
+      qualifications: "M.tech, MBA",
       email: "mujthaba.waseem@ktpoa.org",
       about:
         "Mr. Mujthaba Waseem K works on digital marketing and branding initiatives for placement activities.",
@@ -285,7 +286,7 @@ export function ExecutiveMembersPage({
         "Increased employer engagement",
         "Improved brand visibility",
       ],
-      linkedin: "https://www.linkedin.com/in/mujthaba",
+      linkedin: "https://www.linkedin.com/in/mujthaba2026?utm_source=share_via&utm_content=profile&utm_medium=member_android",
     },
     {
       name: "Mr. BALUCY",
@@ -308,23 +309,24 @@ export function ExecutiveMembersPage({
       linkedin: "https://www.linkedin.com/in/balucy",
     },
     {
-      name: "Mrs. NETHARAVATHI",
+      name: "Prof B Nethravathi",
       position: "Executive Committee Member",
-      institution: "Canara Engineering College, Mangalore",
+      institution: "SKIT Bengaluru",
       qualifications: "M.Tech, B.E.",
-      email: "netharavathi@ktpoa.org",
+      email: "placement@skit.org.in",
       about:
-        "Mrs. Netharavathi focuses on skill development programs and training coordination.",
+        "Prof B Nethravathi Assistant professor in CSE in VTU college since 10 years , successfully doing Technical training in CSE and allied branches , Heading as Head training placement officer since 4 plus years .",
       areasOfExpertise: [
-        "Skill Development",
+        "Academics",
         "Training Coordination",
-        "Capacity Building",
+        "Placements",
       ],
       keyAchievements: [
-        "Coordinated 200+ training sessions",
+        "Been in the Academic industry since 10 years",
         "Enhanced skill development programs",
         "Improved student readiness",
       ],
+      image: netravathiPhoto,
       linkedin: "https://www.linkedin.com/in/netharavathi",
     },
     {
