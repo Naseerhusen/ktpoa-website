@@ -23,7 +23,7 @@ const bheemeswaraPhoto = '/images/Bheemeswara_Reddy.jpeg';
 const celestinaPhoto = '/images/Celestina Suresh.jpg';
 const rashmiPhoto = '/images/Rashmi.jpeg';
 const netravathiPhoto = '/images/Nethravathi.jpeg';
-const waseemPhoto = '/images/waseem.jpeg';
+const waseemPhoto = '/images/wasim.jpeg';
 import { AnimatePresence } from "motion/react";
 
 interface ExecutiveMember {
