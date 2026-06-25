@@ -29,6 +29,7 @@ const tejaswiniPhoto = '/images/Tejaswini Begur.jpg';
 const ravindraPhoto = '/images/Ravindra Thube.jpg';
 const nageshPhoto = '/images/SALIMATH NAGESH.jpeg';
 const kumaraPhoto = '/images/Kumar Mallaiah.jpg';
+const pavanPhoto = '/images/Pavan Kumar.png';
 import { AnimatePresence } from "motion/react";
 
 interface ExecutiveMember {
@@ -213,6 +214,15 @@ export function MembersPage ({
       qualifications: "M.Tech IIT Kharagpur, MBA IIM Kozhikode",
       email: "ravithube1987@gmail.com",
       image: ravindraPhoto,
+    },
+    {
+      name: "Mr. Pavan Kumar U",
+      position: "Member",
+      institution:
+        "Edunet Foundation",
+      qualifications: "Diploma in CSE",
+      email: "Ceyone.pavan@gmail.com",
+      image: pavanPhoto,
     },
  
   ];

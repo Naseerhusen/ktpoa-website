@@ -23,6 +23,7 @@ const bheemeswaraPhoto = '/images/Bheemeswara_Reddy.jpeg';
 const celestinaPhoto = '/images/Celestina Suresh.jpg';
 const rashmiPhoto = '/images/Rashmi.jpeg';
 const netravathiPhoto = '/images/Nethravathi.jpeg';
+const waseemPhoto = '/images/waseem.jpeg';
 import { AnimatePresence } from "motion/react";
 
 interface ExecutiveMember {
@@ -286,6 +287,7 @@ export function ExecutiveMembersPage({
         "Increased employer engagement",
         "Improved brand visibility",
       ],
+      image: waseemPhoto,
       linkedin: "https://www.linkedin.com/in/mujthaba2026?utm_source=share_via&utm_content=profile&utm_medium=member_android",
     },
     {
