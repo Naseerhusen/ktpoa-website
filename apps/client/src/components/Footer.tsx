@@ -107,7 +107,7 @@ export function Footer({ onNavigate }: FooterProps) {
               <h5 className="text-white font-bold text-base mb-4">Social</h5>
               <div className="flex items-center gap-5">
                 <a
-                  href="https://linkedin.com"
+                  href="https://www.linkedin.com/company/ktpoa?lipi=urn%3Ali%3Apage%3Acompanies_company_people_index%3B3346dd0e-6319-4693-b651-09b91aebb883"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-slate-400 hover:text-white transition-colors"

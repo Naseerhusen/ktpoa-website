@@ -24,6 +24,7 @@ const celestinaPhoto = '/images/Celestina Suresh.jpg';
 const rashmiPhoto = '/images/Rashmi.jpeg';
 const netravathiPhoto = '/images/Nethravathi.jpeg';
 const waseemPhoto = '/images/wasim.jpeg';
+const baluPhoto = '/images/Balu.png';
 import { AnimatePresence } from "motion/react";
 
 interface ExecutiveMember {
@@ -291,13 +292,13 @@ export function ExecutiveMembersPage({
       linkedin: "https://www.linkedin.com/in/mujthaba2026?utm_source=share_via&utm_content=profile&utm_medium=member_android",
     },
     {
-      name: "Mr. BALUCY",
+      name: "Mr. BALU CY",
       position: "Executive Committee Member",
-      institution: "Manipal Institute of Technology, Manipal",
-      qualifications: "M.Tech, B.E.",
+      institution: "Dr. T. Thimmaiah Institute of Technology",
+      qualifications: "B.E and MBA",
       email: "balucy@ktpoa.org",
       about:
-        "Mr. Balucy specializes in data analytics and placement performance metrics.",
+        "Mr. Balu CY specializes in data analytics and placement performance metrics.",
       areasOfExpertise: [
         "Data Analytics",
         "Performance Metrics",
@@ -308,6 +309,7 @@ export function ExecutiveMembersPage({
         "Improved data-driven decision making",
         "Enhanced reporting mechanisms",
       ],
+      image: baluPhoto,
       linkedin: "https://www.linkedin.com/in/balucy",
     },
     {
