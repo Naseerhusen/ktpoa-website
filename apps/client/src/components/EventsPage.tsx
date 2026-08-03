@@ -53,7 +53,7 @@ const flagshipEvents = [
 ];
 
 const upcomingEvents = [
-  { date: "August 06, 2026", title: "Work-Ready 360 – The Talent Leadership Conclave", location: "Indiranagar Club Bengaluru", status: "Registration Open", type: "Leadership Conclave" },
+  { date: "August 06, 2026", title: "Work-Ready 360 – The Talent Leadership Conclave", location: "Indiranagar Club Bengaluru", status: "Coming Soon", type: "Leadership Conclave" },
   { date: "March 15-16, 2026", title: "Karnataka Placement Conclave 2026", location: "Bengaluru", status: "Registration Open", type: "Flagship Event" },
   { date: "April 22, 2026", title: "Regional TPO Workshop - North Karnataka", location: "Hubballi", status: "Coming Soon", type: "Workshop" },
   { date: "May 10, 2026", title: "Industry-Academia Summit", location: "Mysuru", status: "Save the Date", type: "Summit" },
