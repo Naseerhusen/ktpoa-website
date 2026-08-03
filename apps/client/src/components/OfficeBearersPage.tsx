@@ -204,7 +204,7 @@ export function OfficeBearersPage({
       name: "Dr. NABI A",
       position: "General Secretary",
       institution: "BMS College of Engineering, Bangalore",
-      qualifications: "Ph.D., M.Tech",
+      qualifications: "MBA, Ph.D, DCSE, SCDM-P, MISTE, IRDA, GSTP",
       email: "nabi.a@ktpoa.org",
       about:
         "Prof. Dr. Nabi A manages the administrative and operational excellence of KTPOA, ensuring smooth coordination among all member institutions.",
