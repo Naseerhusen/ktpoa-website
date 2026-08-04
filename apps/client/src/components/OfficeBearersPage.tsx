@@ -17,7 +17,7 @@ import { useRef, useState, useEffect } from "react";
 import { Footer } from "./Footer";
 import { ScrollToTop } from "./ScrollToTop";
 const hemamaliniPhoto = '/images/cd67160cd5ff3195a83045aed3ab56f8647b87fe.png';
-const nabiPhoto = '/images/nabi.jpeg';
+const nabiPhoto = '/images/nabi.jpg';
 const santoshPhoto = '/images/Santhosh Kumar.jpg';
 const babuReddyPhoto = '/images/babureddy.jpeg';
 import { AnimatePresence } from "motion/react";
