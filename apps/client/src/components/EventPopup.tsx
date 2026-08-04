@@ -27,7 +27,7 @@ export function EventPopup() {
         </button>
 
         <img
-          src="public\images\work-ready-360.jpg"
+          src="public/images/work-ready-360.jpg"
           alt="Work Ready 360 Conclave"
           className="w-full rounded-xl shadow-2xl"
         />
