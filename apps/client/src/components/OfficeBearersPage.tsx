@@ -33,6 +33,7 @@ interface ExecutiveMember {
   keyAchievements: string[];
   academicuniversityassignment?: string[];
   socialandprofessionalcontributions?: string[];
+  professionalconsultancy?: string[];
   email: string;
   linkedin?: string;
 }
@@ -248,6 +249,13 @@ export function OfficeBearersPage({
         "Member in Expert advisory committee for Placement & Trainings, Dr. MS BCU, Bengaluru-560001.",
         "Head - Corporate Relations - Akshaya Institute of Technology, Tumkur, Karnataka.",
         "Placement Professional @ Sri Revana Siddeshwara Institute of Technology, Bengaluru.",
+      ],
+      professionalconsultancy: [
+        "1.	Talent Acquisition Freshers & Lateral, Applied S&I Pvt. Ltd.",
+        "2.	Campus Drives and Freshers Hiring, SmartBrains.",
+        "3.	Freshers & Lateral Hires, General Telecom Services.",
+        "4.	Director, Pathcreators Solutions Pvt. Ltd., New Delhi.",
+        "5.	Director, Etern Visionaries Pvt. Ltd., Bengaluru.",
       ],
 
       image: nabiPhoto,
@@ -678,7 +686,80 @@ export function OfficeBearersPage({
                       </ul>
                     </div>
                   )}
+                  {/* Academic/University Assignments */}
+                  {selectedMember.academicuniversityassignment &&
+                    selectedMember.academicuniversityassignment.length > 0 && (
+                      <div>
+                        <h3 className="font-semibold text-gray-900 mb-3">
+                          Academic/University Assignments
+                        </h3>
+                        <ul className="space-y-2">
+                          {selectedMember.academicuniversityassignment.map(
+                            (assignment, index) => (
+                              <li
+                                key={index}
+                                className="flex items-start gap-2 text-gray-700"
+                              >
+                                <span className="text-[#C9A870] mt-1.5">
+                                  •
+                                </span>
+                                <span>{assignment}</span>
+                              </li>
+                            ),
+                          )}
+                        </ul>
+                      </div>
+                    )}
+                  {/* Social and Professional Contributions */}
+                  {selectedMember.socialandprofessionalcontributions &&
+                    selectedMember.socialandprofessionalcontributions.length > 0 && (
+                      <div>
+                        <h3 className="font-semibold text-gray-900 mb-3">
+                          Social and Professional Contributions
+                        </h3>
+                        <ul className="space-y-2">
+                          {selectedMember.socialandprofessionalcontributions.map(
+                            (contribution, index) => (
+                              <li
+                                key={index}
+                                className="flex items-start gap-2 text-gray-700"
+                              >
+                                <span className="text-[#C9A870] mt-1.5">
+                                  •
+                                </span>
+                                <span>{contribution}</span>
+                              </li>
+                            ),
+                          )}
+                        </ul>
+                      </div>
+                    )}
+                  {/* Professional Consultancy */}
+                  {selectedMember.professionalconsultancy &&
+                    selectedMember.professionalconsultancy.length > 0 && (
+                      <div>
+                        <h3 className="font-semibold text-gray-900 mb-3">
+                          Professional Consultancy
+                        </h3>
+                        <ul className="space-y-2">
+                          {selectedMember.professionalconsultancy.map(
+                            (consultancy, index) => (
+                              <li
+                                key={index}
+                                className="flex items-start gap-2 text-gray-700"
+                              >
+                                <span className="text-[#C9A870] mt-1.5">
+                                  •
+                                </span>
+                                <span>{consultancy}</span>
+                              </li>
+                            ),
+                          )}
+                        </ul>
+                      </div>
+                    )}
                 </div>
+
               </motion.div>
             </div>
           </>
