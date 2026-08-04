@@ -31,6 +31,8 @@ interface ExecutiveMember {
   about: string;
   areasOfExpertise: string[];
   keyAchievements: string[];
+  academicuniversityassignment?: string[];
+  socialandprofessionalcontributions?: string[];
   email: string;
   linkedin?: string;
 }
@@ -136,6 +138,14 @@ export function OfficeBearersPage({
         "Established KTPOA as a premier professional body",
         "Mentored hundreds of TPOs across the state",
       ],
+      academicuniversityassignment: [
+        "Worked as Professor for MBA & Associate Professor for VTU MBA Degree Course",
+        "Worked as BCU Examination Chief Superintendent",
+        "Worked as University question paper setter and answer script evaluator.",
+        "Worked as VTU Examination Dy. Superintendent Internal /External.",
+        "Guided 40+ PG & 100+UG Projects",
+        "Worked as Exam Squad for UG Examinations",
+      ],
       linkedin: "https://www.linkedin.com/in/gurucharan-singh",
     },
     {
@@ -226,7 +236,20 @@ export function OfficeBearersPage({
         "Member in NHRD Forum",
         "Member in All India TPO Association, a professional TPO forum.",
         "Received the Certificate of Appreciation from NCAT, An International forum for Excellence in Higher Education.",
+        "Worked for NAAC, NBA, ISO, NIRF, AICTE, VTU, BU, RGUHS, BCU affiliation and accreditation process.",
+        "Received the Commendation Certificate in the field of Placements from Dr.T. Thimmaiah Institute of Technology, KGF.",
+        "Supported for CSR (Corporate Social Responsibilities) with TCS, Cisco, Mahindra & Mahindra, Central Govt. NEEM Project & etc…",
+        "Having very good contacts with the top-level management of the educational institutions across Karnataka, Tamilnadu, Maharashtra, Andra Pradesh, Telangana & Kerala.",
       ],
+      socialandprofessionalcontributions: [
+        "Chairman, Friends Educational & Charitable Trust, Bengaluru-560091.",
+        "Vice Chairman, Noor E Elahi Educational & Welfare Trust, Bengaluru -560091.",
+        "Treasurer, Elahi Educational & Welfare Trust, Bengaluru -560058.",
+        "Member in Expert advisory committee for Placement & Trainings, Dr. MS BCU, Bengaluru-560001.",
+        "Head - Corporate Relations - Akshaya Institute of Technology, Tumkur, Karnataka.",
+        "Placement Professional @ Sri Revana Siddeshwara Institute of Technology, Bengaluru.",
+      ],
+
       image: nabiPhoto,
       linkedin: "https://www.linkedin.com/in/nabi",
     },
