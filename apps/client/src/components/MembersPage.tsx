@@ -18,8 +18,9 @@ import { Footer } from "./Footer";
 import { ScrollToTop } from "./ScrollToTop";
 const hemamaliniPhoto = '/images/cd67160cd5ff3195a83045aed3ab56f8647b87fe.png';
 const nabiPhoto = '/images/nabi.jpeg';
+const ravikumarPhoto = '/images/ravikumar.jpeg';
 const santoshPhoto = '/images/Santhosh Kumar.jpg';
-const naseerPhoto = '/images/Naseer.jpeg';
+const naseerPhoto = '/images/Naseer.png';
 const piyushPhoto = '/images/Dr. Piyush Kumar Soni.jpeg';
 const matheenullaPhoto = '/images/Matheen_sir.jpeg';
 const pradeepPhoto = '/images/Pradeep N E.png';
@@ -69,11 +70,11 @@ export function MembersPage ({
   // Messages from executive members
   const messages: Message[] = [
     {
-      name: "Prof. N RAVIKUMAR",
+      name: "Prof. RAVIKUMAR.N",
       position: "President, KTPOA",
       message:
         "As we navigate the evolving landscape of education and employment, KTPOA remains committed to bridging the gap between academia and industry. Our collective efforts ensure that every student in Karnataka has access to quality placement opportunities and career guidance. Together, we are building a brighter future for our students.",
-      image: undefined,
+      image: ravikumarPhoto,
     },
     {
       name: "Dr. HEMAMALINI M.J",
