@@ -213,7 +213,12 @@ export function EventsPage({ onNavigate }: EventsPageProps) {
                 )}
                 {event.status === "Registration Closes Soon" && (
                   <button
-                    onClick={() => onNavigate?.("registration")}
+                    onClick={() =>
+                      window.open(
+                        "https://event.mindflix360.com/tech-talk-registration-form",
+                        "_blank"
+                      )
+                    }
                     className="w-full py-2.5 bg-[#EAB308] hover:bg-[#FACC15] text-[#0F172A] font-bold rounded-lg text-sm transition-all"
                   >
                     Register Now
