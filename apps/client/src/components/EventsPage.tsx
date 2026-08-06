@@ -53,7 +53,7 @@ const flagshipEvents = [
 ];
 
 const upcomingEvents = [
-  { date: "August 06, 2026", title: "Work-Ready 360 – The Talent Leadership Conclave", location: "Indiranagar Club Bengaluru", status: "Coming Soon", type: "Leadership Conclave" },
+  { date: "August 06, 2026", title: "Work-Ready 360 – The Talent Leadership Conclave", location: "Indiranagar Club Bengaluru", status: "Registration Closes Soon", type: "Leadership Conclave" },
   { date: "March 15-16, 2026", title: "Karnataka Placement Conclave 2026", location: "Bengaluru", status: "Registration Open", type: "Flagship Event" },
   { date: "April 22, 2026", title: "Regional TPO Workshop - North Karnataka", location: "Hubballi", status: "Coming Soon", type: "Workshop" },
   { date: "May 10, 2026", title: "Industry-Academia Summit", location: "Mysuru", status: "Save the Date", type: "Summit" },
@@ -181,6 +181,8 @@ export function EventsPage({ onNavigate }: EventsPageProps) {
                   className={`text-xs font-semibold px-3 py-1 rounded-full mb-5 inline-block ${
                     event.status === "Registration Open"
                       ? "bg-emerald-500/20 text-emerald-400"
+                      : event.status === "Registration Closes Soon"
+                      ? "bg-amber-500/20 text-amber-400"
                       : event.status === "Coming Soon"
                       ? "bg-blue-500/20 text-blue-400"
                       : "bg-slate-500/20 text-slate-400"
@@ -207,6 +209,14 @@ export function EventsPage({ onNavigate }: EventsPageProps) {
                     className="w-full py-2.5 bg-[#EAB308] hover:bg-[#FACC15] text-[#0F172A] font-bold rounded-lg text-sm transition-all"
                   >
                     Join KTPOA
+                  </button>
+                )}
+                {event.status === "Registration Closes Soon" && (
+                  <button
+                    onClick={() => onNavigate?.("registration")}
+                    className="w-full py-2.5 bg-[#EAB308] hover:bg-[#FACC15] text-[#0F172A] font-bold rounded-lg text-sm transition-all"
+                  >
+                    Register Now
                   </button>
                 )}
                 {event.status === "Coming Soon" && (

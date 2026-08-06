@@ -55,8 +55,8 @@ export function ContactPage({ onNavigate }: ContactPageProps) {
   const GOLD_ICON = { background: "linear-gradient(135deg, #C9A870 0%, #EAB308 100%)" };
 
   const contactCards = [
-    { icon: Mail, label: "Email Us", sub: "Send us an email anytime", value: "info@ktpoa.org", href: "mailto:info@ktpoa.org" },
-    { icon: Phone, label: "Call Us", sub: "Mon–Fri, 9:00 AM – 6:00 PM", value: "+91 80 1234 5678", href: "tel:+918012345678" },
+    { icon: Mail, label: "Email Us", sub: "Send us an email anytime", value: "secretary@ktpoa.org", href: "mailto:secretary@ktpoa.org" },
+    { icon: Phone, label: "Call Us", sub: "Mon–Fri, 9:00 AM – 6:00 PM", value: "+91 80 1234 5678", href: "tel:+91 9886376024" },
     { icon: MapPin, label: "Visit Us", sub: "Our office location", value: "Bangalore, Karnataka", href: undefined },
   ];
 

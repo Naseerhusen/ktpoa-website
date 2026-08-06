@@ -351,10 +351,10 @@ export function TPORegistrationPage({
             <p className="text-slate-500 text-lg italic">
               For membership queries, contact us at{" "}
               <a
-                href="mailto:membership@ktpoa.org"
+                href="mailto:secretary@ktpoa.org"
                 className="text-[#EAB308] hover:underline font-bold"
               >
-                membership@ktpoa.org
+                secretary@ktpoa.org
               </a>
             </p>
           </div>

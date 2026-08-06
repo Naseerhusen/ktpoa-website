@@ -398,10 +398,10 @@ export function IndustryRegistrationPage({
             <p className="text-slate-500 text-sm">
               For partnership queries, contact us at{" "}
               <a
-                href="mailto:industry@ktpoa.org"
+                href="mailto:secretary@ktpoa.org"
                 className="text-[#EAB308] hover:underline font-semibold"
               >
-                industry@ktpoa.org
+                secretary@ktpoa.org
               </a>
             </p>
           </div>

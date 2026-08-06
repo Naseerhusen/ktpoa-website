@@ -70,7 +70,7 @@ export function MembersPage ({
   // Messages from executive members
   const messages: Message[] = [
     {
-      name: "Prof. RAVIKUMAR.N",
+      name: "Prof. RAVIKUMAR. N",
       position: "President, KTPOA",
       message:
         "As we navigate the evolving landscape of education and employment, KTPOA remains committed to bridging the gap between academia and industry. Our collective efforts ensure that every student in Karnataka has access to quality placement opportunities and career guidance. Together, we are building a brighter future for our students.",
