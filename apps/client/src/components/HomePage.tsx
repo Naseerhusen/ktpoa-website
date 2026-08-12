@@ -1,7 +1,7 @@
 import { useRef } from "react";
 import { Footer } from "./Footer";
 import { ScrollToTop } from "./ScrollToTop";
-import { EventPopup } from "./EventPopup";
+// import { EventPopup } from "./EventPopup";
 import { HeroSection } from "../sections/HeroSection";
 import { AboutUsSection } from "../sections/AboutUsSection";
 import { MessageFromPresidentSection } from "../sections/MessageFromPresidentSection";
@@ -21,7 +21,7 @@ export function HomePage({ onNavigate }: HomePageProps) {
 
   return (
     <div className="bg-white overflow-x-hidden" style={{ fontFamily: "'Inter', sans-serif" }}>
-      <EventPopup />
+      {/* <EventPopup /> */}
       <HeroSection onLearnMore={scrollToAbout} />
       <div ref={aboutRef}>
         <AboutUsSection />
